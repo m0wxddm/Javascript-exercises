@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<pre style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
+<input type="number" name="bai1a" id="bai1_a" onchange="bai1()" placeholder="Nhập vào số a:"> <input type="number" name="bai1b" id="bai1_b" onchange="bai1()" placeholder="Nhập vào số b:">
+<p id="bai1_ketqua"></p>
+
+Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
+<input type="number" name="bai2age" id="bai2_age" onchange="bai2(this.value)" placeholder="Nhập vào số tuổi:">
+<p id="bai2_ketqua"></p>
+
+Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+<input type="number" name="bai3_num" id="bai3_num" onchange="bai3(this.valueAsNumber)" placeholder="Nhập vào số nguyên:">
+<p id="bai3_ketqua"></p>
+
+Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+<input type="number" name="bai4_num1" id="bai4_num1" onchange="bai4()" placeholder="Nhập vào số thứ nhất:"> <input type="number" name="bai4_num2" id="bai4_num2" onchange="bai4()" placeholder="Nhập vào số thứ hai:"> <input type="number" name="bai4_num3" id="bai4_num3" onchange="bai4()" placeholder="Nhập vào số thứ ba:">
+<p id="bai4_ketqua">Giá trị lớn nhất của 3 số nguyên đó là: </p>
+
+Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+<input type="number" name="bai5_kiemtra" id="bai5_kiemtra" onchange="bai5()" placeholder="Nhập điểm bài kiểm tra:"> <input type="number" name="bai5_giuaky" id="bai5_giuaky" onchange="bai5()" placeholder="Nhập điểm bài giữa kỳ:"> <input type="number" name="bai5_cuoiky" id="bai5_cuoiky" onchange="bai5()" placeholder="Nhập điểm bài cuối kỳ:">
+<p id="bai5_ketqua">Học lực của học sinh đó là: </p>
+
+Bài 6: Kiểm tra xem 3 số thực (a, b, c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a, b, c là cạnh của một tam giác là:
+a, b, c > 0
+a + b > c
+b + c > a
+a + c > b
+<input type="number" name="bai6_num1" id="bai6_num1" onchange="bai6()" placeholder="Nhập số thực thứ nhất:"> <input type="number" name="bai6_num2" id="bai6_num2" onchange="bai6()" placeholder="Nhập số thực thứ hai:"> <input type="number" name="bai6_num3" id="bai6_num3" onchange="bai6()" placeholder="Nhập số thực thứ ba:">
+<p id="bai6_ketqua">Trả lời: </p>
+
+Bài 7: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+Một số nguyên là tuổi của một người khi nhỏ 120 và lớn hơn 0.
+<input type="number" id="bai7_age" onchange="bai7()" placeholder="Nhập vào một số:">
+<p id="bai7_ketqua">Trả lời: </p>
+
+Bài 8: Tính diện tích hình vuông khi biết cạnh a.
+<input type="number" id="bai8_a" onchange="bai8()" placeholder="Nhập cạnh a:">
+<p id="bai8_ketqua">Trả lời: </p>
+
+Bài 9: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.
+<input type="number" id="bai9_a" onchange="bai9()" placeholder="Nhập cạnh a:"> <input type="number" id="bai9_b" onchange="bai9()" placeholder="Nhập cạnh b:">
+<p id="bai9_ketqua">Trả lời: </p>
+
+Bài 10: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+<input type="number" id="bai10_a" onchange="bai9()" placeholder="Nhập cạnh a:"> <input type="number" id="bai10_b" onchange="bai9()" placeholder="Nhập cạnh b:">
+<p id="bai10_ketqua">Trả lời: </p>
+
+Bài 11: Giải phương trình bậc 1.
+Nhập vào phương trình bậc 1: y = <input type="number" id="bai11_a" onchange="bai11()" placeholder="a" style="width: 50px;"> x + <input type="number" id="bai11_b" onchange="bai11()" placeholder="b" style="width: 50px;">
+<p id="bai11_ketqua">Trả lời: </p>
+
+Bài 12: Giải phương trình bậc 2.
+Nhập vào phương trình bậc 2: y = <input type="number" id="bai12_a" onchange="bai12()" placeholder="a" style="width: 50px;"> x<sup>2</sup> + <input type="number" id="bai12_b" onchange="bai12()" placeholder="b" style="width: 50px;"> x + <input type="number" id="bai12_c" onchange="bai12()" placeholder="c" style="width: 50px;">
+<p id="bai12_ketqua">Trả lời: </p>
+
+Bài 13: Chuyển từ độ C sang độ F.
+Nhập nhiệt độ cần quy đổi: <input type="number" id="bai13_celsius" onchange="bai13()" placeholder="celsius" style="width: 50px;"> <sup>o</sup>C
+Trả lời: Độ F tương ứng là <var id="bai13_ketqua"></var> <sup>o</sup>F
+
+
+Bài 14: Chuyển từ mét sang feet
+Nhập độ dài cần quy đổi: <input type="number" id="bai14_meter" onchange="bai14()" placeholder="meter" style="width: 50px;"> m
+Trả lời: Độ dài feet tương ứng là <var id="bai14_ketqua"></var> feet
+
+
+Bài 15: Kiểm tra kiểu dữ liệu của 2 biến
+Nhập 2 biến: <input id="bai15_a" onchange="bai15()" placeholder="a"> <input id="bai15_b" onchange="bai15()" placeholder="b">
+<p id="bai15_ketqua">Trả lời: </p>
+</pre>
+</body>
+<script src="Ex1.js"></script>
+</html>
