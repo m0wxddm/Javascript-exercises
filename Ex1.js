@@ -7,8 +7,8 @@ function bai1() {
     let a = document.getElementById("bai1_a").valueAsNumber;
     let b = document.getElementById("bai1_b").valueAsNumber;
     if(isNaN(a) || isNaN(b)) return;
-    document.getElementById("bai1_ketqua").innerHTML = "Đáp án: " + a%b == 0 ? a + " chia hết cho " + b
-                                                            : a + " không chia hết cho " + b;
+    document.getElementById("bai1_ketqua").innerHTML = "Đáp án: " + (a%b == 0 ? a + " chia hết cho " + b
+                                                            : a + " không chia hết cho " + b);
 }
 
 function bai2(val) {
