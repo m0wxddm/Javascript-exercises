@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Ex2.js"></script>
+</head>
+<body>
+    <pre>
+Mảng ban đầu : [16, 0, 6, 1, 9, 99]
+
+Bài 1: Viết một chương trình JavaScript thực hiện đảo ngược các giá trị trong một mảng đã cho. Không sử dụng phương thức reverse()
+<button onclick="reverseArray()">Đảo ngược</button> <var id="bai1"></var>
+
+Bài 2: Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại có nằm trong mảng hay không. Nếu có in ra vị trí của phần tử đó.
+<input type="number" onchange="checkExist(this.value)"> <var id="bai2"></var>
+
+Bài 3: Tạo mảng có sẵn với các phẩn tử số. Cho người dùng nhập vào một số bất kỳ, sau đó tiến hành kiểm tra:
+
+Nếu số đó có trong mảng cho sẵn thì alert(“Bingo”)
+
+Nếu số đó không có trong mảng cho sẳn thì alert(“Chúc bạn may mắn lần sau”)
+
+Và tiếp tục cho người dung chọn 1 số mới
+<input type="number" onchange="checkExist2(this.value)"> <var id="bai3"></var>
+
+Bài 4: Cho người dùng nhập vào dãy số bất kỳ. Sử dụng split() để chuyển đổi kiểu dữ liệu từ string sang kiểu array. Tiến hành duyệt các phần tử và tìm ra phần tử có giá trị lớn nhất trong mảng
+<input type="text" id='bai4_input'>
+<button onclick="stringToArray()">Henshin</button>
+<var id="bai4"></var>
+
+Bài 5: Mô phỏng ứng dụng todo list, tạo sẵn một mảng todoList có sẵn 2 phần tử
+const todoList = [“Go to bed at 11pm”, “Do homework at 8pm”];
+
+Sử dụng những kiến thức thao tác với mảng (C/R/U/D), hỏi người dùng command mà người dùng muốn nhập vào thông qua 4 chữ cái C/R/U/D :
+
+C — Create:
+Cho người dùng nhập vào todo mới, sau đó in ra toàn bộ phần tử có trong todoList theo dạng :
+1. Go to bed at 11pm
+2. Do homework at 8pm 
+3. New todo
+4. Something add new
+
+R — Read:
+In ra toàn bộ phần tử có trong todoList giống danh sách trên
+
+U — Update:
+Hỏi người dùng vị trí phần tử muốn update
+Hỏi người dùng nội dung muốn update → tiến hành update
+Sau đó in ra toàn bộ phần tử có trong todoList giống danh sách trên
+
+D — Delete:
+Hỏi người dùng vị trí phần tử muốn delete
+
+Tiến hành delete
+
+Sau đó in ra toàn bộ phần tử có trong todoList giống danh sách trên
+
+-----------------------------------
+
+Nhập 1 trong 4 ký tự C/R/U/D: <input type="text" id="query_input"> <button onclick="toDoList()">Confirm</button>
+<p id="request_input"></p>
+<p id="bai5"></p>
+    </pre>
+</body>
+</html>
