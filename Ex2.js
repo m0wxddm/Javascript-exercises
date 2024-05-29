@@ -58,14 +58,14 @@ function toDoList() {
             let create_request = document.createElement("input");
             let create_request_confirm = document.createElement("button");
             create_request_confirm.innerHTML = "Confirm";
+            request_input.innerHTML = 'Nhập việc cần làm mới ';
+            request_input.appendChild(create_request);
+            request_input.appendChild(create_request_confirm);
             create_request_confirm.onclick = function() {
                 todoList.push(create_request.value);
                 display();
                 document.getElementById('request_input').textContent = '';
             }
-            request_input.innerHTML = 'Nhập việc cần làm mới ';
-            request_input.appendChild(create_request);
-            request_input.appendChild(create_request_confirm);
             break;
         case 'R':
             display();
